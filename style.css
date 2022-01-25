@@ -1,0 +1,70 @@
+body {
+    background: #ccc;
+    ;
+}
+
+.slider__wrap {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.slider__track {
+    display: flex;
+    transition: 0.5s;
+}
+
+.card {
+    min-width: 200px;
+
+}
+
+.card+.card {}
+
+.card-body {
+    text-align: center;
+}
+
+.dots {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.dots__list {
+    display: flex;
+    list-style: none;
+}
+
+.dots__item {
+
+    cursor: pointer;
+}
+
+.dots__item+.dots__item {
+    margin-left: 40px;
+}
+
+.dots__item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: chartreuse;
+}
+
+.dots__item.active {
+    background: cornflowerblue !important;
+}
+
+.prev {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+
+.next {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+}
